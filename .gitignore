@@ -13,3 +13,5 @@ MultiQTL/R/allin
 MultiQTL/R/out*.txt
 MultiQTL/Figs/*.pdf
 Shorter/rqtltour2.pdf
+HK/Figs/*.pdf
+HK/hk*.pdf
