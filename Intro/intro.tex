@@ -91,26 +91,22 @@ in model organisms
 \vspace{5mm}
 
 \textsize \color{myblue}
-Karl W Broman
+Karl Broman
 \vspace{5mm}
 
 \color{mywhite}
-{\smallsize Department of Biostatistics and Medical Informatics
+{\smallsize Biostatistics and Medical Informatics
 
 University of Wisconsin -- Madison
 \vspace{20mm}
 
 
-\href{http://www.biostat.wisc.edu/~kbroman}{\tt www.biostat.wisc.edu/{\textasciitilde}kbroman} \\
-{\smallestsize \color{myblue} 
-[$\rightarrow$ \href{http://www.biostat.wisc.edu/~kbroman/teaching}{Teaching} $\rightarrow$ 
-\href{http://www.biostat.wisc.edu/~kbroman/teaching/misc}{Miscellaneous lectures}]}
+\href{http://kbroman.org}{\tt kbroman.org} \\[3pt]
+\href{https://github.com/kbroman}{\tt github.com/kbroman} \\
+\href{https://twitter.com/kwbroman}{\tt @kwbroman}
 }
 
 \end{center}
-
-%\vfill
-%\includegraphics[height=1in]{Figs/qrcode_jax.png}
 
 \newpage
 \thispagestyle{empty}
@@ -355,31 +351,20 @@ Lander \& Botstein (1989)
 \smallersize
 \hfill \begin{minipage}{9.5in}
 \begin{itemize}
+\itemsep24pt
 \setlength{\rightskip}{0pt plus 1fil} % makes ragged right
   \item Assume a {\color{mypink} single} QTL model.
   \item Each position in the genome, one at a time, is posited as the
   putative QTL.
   \item Let $\mathsf{q = }$ 1/0 if the (unobserved) QTL genotype is
-  BB/AB. \\
-  {\color{myblue} (Or 2/1/0 if the QTL genotype is BB/AB/AA in an intercross.)} \\
+  BB/AB. \\[12pt]
+  {\color{myblue} (Or 2/1/0 if the QTL genotype is BB/AB/AA in an intercross.)} \\[12pt]
         Assume $\mathsf{y | q \sim N(\mu_q, \sigma)}$
   \item Given genotypes at linked markers, $\mathsf{y \sim}$ mixture of normal
-  dist'ns with mixing proportions $\mathsf{\Pr(q \ | \ \text{marker data})}$:
+  dist'ns with mixing proportions $\mathsf{\Pr(q \ | \ \text{marker data})}$
 \end{itemize}
 \end{minipage}
 
-\vspace{1cm}
-
-\smallestsize
-\begin{center}
-\begin{tabular}{ccccc} \hline
- & & \hspace*{5mm} & \multicolumn{2}{c}{QTL genotype} \\ \cline{4-5}
-$\mathsf{M_1}$ & $\mathsf{M_2}$ & & BB & AB \\ \hline
-BB & BB & & $\mathsf{(1-r_L)(1-r_R)/(1-r)}$ & $\mathsf{r_L r_R / (1-r)}$ \\
-BB & AB & & $\mathsf{(1-r_L)r_R/r}$         & $\mathsf{r_L(1-r_R)/r}$ \\
-AB & BB & & $\mathsf{r_L(1-r_R)/r}$         & $\mathsf{(1-r_L)r_R/r}$ \\
-AB & AB & & $\mathsf{r_L r_R / (1-r)}$ & $\mathsf{(1-r_L)(1-r_R)/(1-r)}$ \\ \hline
-\end{tabular} \end{center}
 
 
 \newpage
