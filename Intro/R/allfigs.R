@@ -1,0 +1,32 @@
+
+for(bw in 0:1)   source("backcross_fig.R")
+for(bw in 0:1)   source("intercross_fig.R")
+for(bw in 0:1)   source("pheno_fig.R")
+for(bw in 0:1)   source("map_fig.R")
+for(bw in 0:1)   source("geno_fig.R")
+for(bw in 0:1)   source("anova_fig.R")
+for(bw in 0:1)   source("mixtures_fig.R")
+for(bw in 0:1)   source("alod_fig.R")
+for(bw in 0:1)   source("loddist_fig.R")
+for(bw in 0:1)   source("permtest.R")
+for(bw in 0:1)   source("perm_hist.R")
+for(bw in 0:1)   source("lodsupint_fig.R")
+for(bw in 0:1)   source("hk_lod_fig.R")
+for(bw in 0:1)   source("hk_selgeno_fig.R")
+for(bw in 0:1)   source("ehk_lod_fig.R")
+for(bw in 0:1)   source("imp_fig.R")
+for(bw in 0:1)   source("imp_lod_fig.R")
+for(bw in 0:1)   source("imp_lod_comp_fig.R")
+for(bw in 0:1)   source("spurious_lod.R")
+for(bw in 0:1)   source("xchr_bc.R")
+for(bw in 0:1)   source("xchr_f2.R")
+for(bw in 0:1)   source("selgeno_fig.R")
+for(bw in 0:1)   source("covar_fig.R")
+
+for(bw in 0:1)   source("2dscan_fig.R")
+for(bw in 0:1)   source("epistasis_fig.R")
+for(bw in 0:1)   source("selbias_fig.R")
+
+
+  
+for(bw in 0:1) source("genoprob_fig.R")

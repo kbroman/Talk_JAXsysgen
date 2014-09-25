@@ -1,0 +1,15 @@
+*.aux
+*.log
+*.out
+Intro/intro*.pdf
+Intro/Figs/*.pdf
+Intro/R/Rcache
+Intro/NewData/Rcache
+Intro/notes_2013.txt
+Intro/R/*.tgz
+MultiQTL/multiqtl*.pdf
+MultiQTL/R/Rcache
+MultiQTL/R/allin
+MultiQTL/R/out*.txt
+MultiQTL/Figs/*.pdf
+Shorter/rqtltour2.pdf

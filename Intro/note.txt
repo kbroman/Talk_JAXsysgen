@@ -1,0 +1,15 @@
+pdfnup intro_bw.pdf --nup 1x2 --no-landscape --paper letterpaper
+mv intro_bw-nup.pdf intro_2up.pdf 
+
+----------------------------------------------------------------------
+
+pdfnup: part of pdfjam
+http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam/
+
+pdfnup myfile.pdf --nup 1x2 --no-landscape --paper letterpaper
+
+need a ~/.pdfnup.conf file containing:
+pdflatex=/sw/bin/pdflatex
+
+pdfnup lec1_bw.pdf --nup 1x2 --paper a4paper 
+mv lec1_bw-1x2.pdf handout1.pdf
