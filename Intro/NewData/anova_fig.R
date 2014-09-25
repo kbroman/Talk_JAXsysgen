@@ -25,7 +25,7 @@ y <- sug$pheno[,3]
 x <- pull.geno(fill.geno(subset(sug, chr=c(15,6))))[,c("D15MIT184", "D6MIT259")]
 z <- runif(length(y), -0.2, 0.2)
 par(las=1)
-plot(x[,1]+z, y, ylab=expression(paste(log[2], " liver")),
+plot(x[,1]+z, y, ylab="Body weight",
      xlab="Genotype at D15Mit184", xaxt="n")
 axis(side=1, at=1:3, labels=c("CC","CB","BB"))
 me <- tapply(y, x[,1], mean, na.rm=TRUE)
