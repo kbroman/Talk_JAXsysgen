@@ -127,7 +127,7 @@ Human vs mouse
 
 \centerline{
 \includegraphics[height=5in]{Figs/da-vinci-man.jpg}
-\includegraphics[height=5in]{Figs/vitruvian_mouse.jpg} 
+\includegraphics[height=5in]{Figs/vitruvian_mouse.jpg}
 }
 
 {\color{myblue} \smallestsize \hfill
@@ -172,7 +172,7 @@ Phenotype data
 
 \vfill
 \smallestsize
-\color{myblue} 
+\color{myblue}
 Sugiyama et al.\ (2002) Physiol Genomics 10:5--12
 
 
@@ -219,7 +219,7 @@ Goals
 \item Identify quantitative trait loci (QTL)\\[6pt]
    {\color{myblue}   (and interactions among QTL)}
 \item Interval estimates of QTL location
-\item Estimated QTL effects 
+\item Estimated QTL effects
 \end{itemize} \end{minipage}
 
 
@@ -241,7 +241,7 @@ Statistical structure
 {\color{mypink} The missing data problem:}  & \hspace{15mm} &
 Markers $\longleftrightarrow$ QTL \\[15mm]
 
-{\color{mypink} The model selection problem:} 
+{\color{mypink} The model selection problem:}
 & & QTL, covariates $\longrightarrow$ phenotype
 \end{tabular}
 
@@ -266,7 +266,7 @@ ANOVA at marker loci
 \vspace*{5mm}
 
 \sloppy
-\smallersize 
+\smallersize
 \begin{itemize}
 \setlength{\rightskip}{0pt plus 1fil} % makes ragged right
 \item Also known as {\color{mypink} marker regression}.
@@ -391,7 +391,7 @@ Calculate {\color{myblue} $\mathsf{\Pr(q \ | \ \text{marker data})}$}, assuming
 
 \vspace{10mm}
 
-Or use the {\color{mypink} hidden Markov model (HMM)} technology 
+Or use the {\color{mypink} hidden Markov model (HMM)} technology
 \begin{itemize}
 \item To allow for genotyping errors
 \item To incorporate dominant markers
@@ -428,7 +428,7 @@ Calculate {\color{myblue} $\mathsf{\Pr(q \ | \ \text{marker data})}$}, assuming
 
 \vspace{10mm}
 
-Or use the {\color{mypink} hidden Markov model (HMM)} technology 
+Or use the {\color{mypink} hidden Markov model (HMM)} technology
 \begin{itemize}
 \item To allow for genotyping errors
 \item To incorporate dominant markers
@@ -463,7 +463,7 @@ Calculate {\color{myblue} $\mathsf{\Pr(q \ | \ \text{marker data})}$}, assuming
 
 \vspace{10mm}
 
-Or use the {\color{mypink} hidden Markov model (HMM)} technology 
+Or use the {\color{mypink} hidden Markov model (HMM)} technology
 \begin{itemize}
 \item To allow for genotyping errors
 \item To incorporate dominant markers
@@ -499,7 +499,7 @@ Calculate {\color{myblue} $\mathsf{\Pr(q \ | \ \text{marker data})}$}, assuming
 
 \vspace{10mm}
 
-Or use the {\color{mypink} hidden Markov model (HMM)} technology 
+Or use the {\color{mypink} hidden Markov model (HMM)} technology
 \begin{itemize}
 \item To allow for genotyping errors
 \item To incorporate dominant markers
@@ -535,7 +535,7 @@ Calculate {\color{myblue} $\mathsf{\Pr(q \ | \ \text{marker data})}$}, assuming
 
 \vspace{10mm}
 
-Or use the {\color{mypink} hidden Markov model (HMM)} technology 
+Or use the {\color{mypink} hidden Markov model (HMM)} technology
 \begin{itemize}
 \item To allow for genotyping errors
 \item To incorporate dominant markers
@@ -571,7 +571,7 @@ Calculate {\color{myblue} $\mathsf{\Pr(q \ | \ \text{marker data})}$}, assuming
 
 \vspace{10mm}
 
-Or use the {\color{mypink} hidden Markov model (HMM)} technology 
+Or use the {\color{mypink} hidden Markov model (HMM)} technology
 \begin{itemize}
 \item To allow for genotyping errors
 \item To incorporate dominant markers
@@ -596,7 +596,7 @@ The normal mixtures
 \begin{minipage}[t]{4.6in}
 \vspace*{10mm}
 
-\color{mywhite} \smallersize 
+\color{mywhite} \smallersize
 \setlength{\unitlength}{1.0in}
 \begin{center}
 \begin{picture}(4.5,1)
@@ -640,7 +640,7 @@ conditional on the genotypes at the two markers.
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
 \centering
-Interval mapping 
+Interval mapping
 \end{minipage}
 
 \vspace{25mm}
@@ -658,16 +658,16 @@ Interval mapping
 \vspace{10mm}
 
 \hspace{15mm} where $\mathsf{f(y; \mu,\sigma)= \exp[-(y-\mu)^2/(2\sigma^2)] / \sqrt{2 \pi
-\sigma^2}}$ 
+\sigma^2}}$
 \vspace{15mm}
 
  {\color{mypink} Log likelihood}: \hspace{5mm}
 $\mathsf{l(\mu_0,\mu_1,\sigma) = \sum_i \log \Pr(y_i | \text{marker
-data},\mu_0,\mu_1,\sigma)}$ 
+data},\mu_0,\mu_1,\sigma)}$
 \vspace{10mm}
 
  Maximum likelihood estimates ({\color{mypink} MLEs})
-of $\mathsf{\mu_0}$, $\mathsf{\mu_1}$, $\mathsf{\sigma}$: 
+of $\mathsf{\mu_0}$, $\mathsf{\mu_1}$, $\mathsf{\sigma}$:
 \vspace{5mm}
 
 \hspace{15mm} values for which $\mathsf{l(\mu_0,\mu_1,\sigma)}$ is maximized.
@@ -716,7 +716,7 @@ w_{ij}^{(k)}}$
 \vspace{5mm}
 
 \hspace{10mm} Start with $\mathsf{w_{ij}^{(1)} = p_{ij}}$; iterate the E \& M steps until
-convergence.  
+convergence.
 \end{minipage}
 
 \newpage
@@ -752,7 +752,7 @@ evidence} for the presence of a QTL at a particular
 location.
 \vspace{15mm}
 
- $\mathsf{\lod(\lambda)}$ 
+ $\mathsf{\lod(\lambda)}$
 \begin{minipage}[t]{8.5in}
 $\mathsf{= \log_{10}}$ likelihood ratio comparing the hypothesis of a \\
 \hspace*{8mm} QTL at position $\mathsf{\lambda}$ versus that of no QTL
@@ -769,7 +769,7 @@ $\mathsf{= \log_{10} \left\{ \frac{\Pr(y | \text{QTL at $\lambda$}, \hat{\mu}_{0
 assuming a single QTL at position $\mathsf{\lambda}$.
 \vspace{15mm}
 
- No QTL model: 
+ No QTL model:
 \begin{minipage}[t]{7.5in}
 The phenotypes are independent and identically
 distributed (iid) $\mathsf{N(\mu, \sigma^2)}$.
@@ -909,18 +909,18 @@ Null distribution of the LOD score
 \begin{minipage}[t]{4.7in}
 \vspace*{10mm}
 
-\color{mywhite} \smallersize 
+\color{mywhite} \smallersize
 \begin{itemize}
 \setlength{\rightskip}{0pt plus 1fil} % makes ragged right
 \item Null distribution derived by computer simulation of backcross
-with genome of typical size.  
+with genome of typical size.
 \item Dashed curve: distribution of LOD score at any one point.
-\item Solid curve: distribution of maximum LOD score, genome-wide. 
+\item Solid curve: distribution of maximum LOD score, genome-wide.
 \end{itemize}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{4.7in}
-\vspace*{0cm} 
+\vspace*{0cm}
 
 \includegraphics{Figs/loddist.pdf}
 \end{minipage}
@@ -1010,7 +1010,7 @@ LOD support intervals
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
 \centering
-Modelling multiple QTL 
+Modelling multiple QTL
 \end{minipage}
 
 \vspace{2cm}
@@ -1021,7 +1021,7 @@ Modelling multiple QTL
 \begin{itemize}
 \itemsep24pt
 \item Reduce residual variation $\implies$ increased power
-   
+
 \item Separate linked QTL
 
 \item Identify interactions among QTL
@@ -1088,12 +1088,12 @@ traits}. Sinauer Associates, Sunderland, MA, chapter 15
 
 \item Lander ES, Botstein D (1989) Mapping Mendelian factors underlying
 quantitative traits using RFLP linkage maps. Genetics
-121:185--199 
+121:185--199
 
 {\color{myblue} The seminal paper.}
 
 \item Churchill GA, Doerge RW (1994) Empirical threshold values for
-quantitative trait mapping. Genetics 138:963--971 
+quantitative trait mapping. Genetics 138:963--971
 
 {\color{myblue} LOD thresholds by permutation tests.}
 
