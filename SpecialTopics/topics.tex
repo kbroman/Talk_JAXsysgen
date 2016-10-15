@@ -441,8 +441,8 @@ Additive covariate
 \color{mywhite} \smallsize
 
 \begin{eqnarray*}
-\text{H}_0: y & = & \mu + \alpha x + \epsilon \\
-\text{H}_a: y & = & \mu + \alpha x + \beta q + \epsilon
+\text{H}_0: y & = & \mu + \beta_x x + \epsilon \\
+\text{H}_a: y & = & \mu + \beta_x x + \beta_q q + \epsilon
 \end{eqnarray*}
 
 \vspace{30mm}
@@ -451,12 +451,66 @@ Additive covariate
 \begin{minipage}{9.5in}
 \begin{itemize}
 \itemsep20pt
-\item If covariate has strong effect on the phenotype, this can give
-  improved power to detect QTL.
+\item If covariate has strong effect on the phenotype, accounting for
+  it can give improved power to detect QTL.
 \item In permutations, keep phenotype and covariate together
-\item Use care when covariate is another phenotype
+\item Use care when the covariate is another phenotype
 \end{itemize}
 \end{minipage}
+
+\newpage
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Additive covariate
+\end{minipage}
+
+\vfill
+
+\centerline{\includegraphics{Figs/addcovar.pdf}}
+
+\newpage
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Adjust then scan?
+\end{minipage}
+
+\vspace{15mm}
+
+\color{mywhite} \smallsize
+
+\hspace{0.5in} \begin{minipage}{9.5in}
+  \begin{itemize}
+    \itemsep18pt
+  \item Consider adjusted phenotype $y' = y/x$
+  \item The QTL model is $(y/x) = \mu + \beta_q q + \epsilon$
+  \item Equivalently
+
+$$y = \left\{ \begin{array}{c@{\hspace{1cm}}l} \mu \ x + \epsilon' & \text{if
+      $q = 0$} \\
+    (\mu + \beta_q) x + \epsilon' & \text{if $q =
+      1$} \end{array} \right. $$
+\end{itemize}
+\end{minipage}
+
+
+\newpage
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Adjust then scan?
+\end{minipage}
+
+\vfill
+
+\centerline{\includegraphics{Figs/y_over_x.pdf}}
+
+
+
 
 \newpage
 
@@ -471,9 +525,9 @@ Interactive covariate
 \color{mywhite} \smallsize
 
 \begin{eqnarray*}
-\text{H}_0: y & = & \mu + \alpha x + \epsilon \\
-\text{H}_a: y & = & \mu + \alpha x + \beta q + \epsilon \\
-\text{H}_i: y & = & \mu + \alpha x + \beta q + \gamma x q + \epsilon
+\text{H}_0: y & = & \mu + \beta_x x + \epsilon \\
+\text{H}_a: y & = & \mu + \beta_x x + \beta_q q + \epsilon \\
+\text{H}_i: y & = & \mu + \beta_x x + \beta_q q + \gamma x q + \epsilon
 \end{eqnarray*}
 
 \vspace{15mm}
@@ -487,6 +541,19 @@ Can consider 3 LOD scores:
     \item LOD$_i$ comparing H$_i$ and H$_a$
   \end{itemize}
 \end{minipage}
+
+\newpage
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Interactive covariate
+\end{minipage}
+
+\vfill
+
+\centerline{\includegraphics{Figs/intcovar.pdf}}
+
 
 \newpage
 
