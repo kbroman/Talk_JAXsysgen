@@ -267,6 +267,69 @@ Multiple traits:
 
 
 
+\newpage
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Pleiotropy?
+\end{minipage}
+
+\vspace{25mm}
+
+\color{mywhite} \smallersize
+
+\hspace{0.5in} \begin{minipage}{9.5in}
+
+  \begin{itemize}
+    \itemsep18pt
+
+  \item Consider two traits
+  \item Assume each affected by a single QTL
+  \item Scan chromosome for single QTL, assuming it affects both
+  \item Two-dimensional scan over chromosome, one QTL affecting one
+    trait and other affecting the other trait
+  \item Significance?
+    {\color{myblue}
+    \begin{itemize}
+    \item Parametric bootstrap using fitted single-QTL model
+    \item Stratified permutation test, permuting within strata
+      defined by genotype at estimated single QTL
+      \end{itemize} }
+
+  \end{itemize}
+
+
+\end{minipage}
+
+\newpage
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Traits over time
+\end{minipage}
+
+\vspace{25mm}
+
+\color{mywhite} \smallersize
+
+\hspace{0.5in} \begin{minipage}{9.5in}
+
+  \begin{itemize}
+    \itemsep18pt
+
+  \item Fit model to each curve; use parameters as phenotypes
+  \item Full QTL model of curves, where parameters depend on QTL genotypes
+  \item Dimension reduction $\rightarrow$ standard multivariate QTL
+    analysis
+  \item Treat each time point individually, and then combine LOD
+    scores
+  \end{itemize}
+
+\end{minipage}
+
+
 
 
 
